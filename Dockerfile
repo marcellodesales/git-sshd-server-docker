@@ -1,10 +1,8 @@
-FROM gliderlabs/alpine:3.3
-MAINTAINER Marcello_deSales@intuit.com
+FROM alpine:3.9
+LABEL maintainer="marcello.desales@gmail.com"
 
-RUN \
-  echo 'PS1="$(echo -e "\xF0\x9F\x90\xB3") [\\u@\\h]:\\W \\$ "' >> ~/.bashrc && \
-  apk add --no-cache git openssh bash python py-pip && \
-  pip install --upgrade pip && \
+RUN echo 'PS1="$(echo -e "\xF0\x9F\x90\xB3") [\\u@\\h]:\\W \\$ "' >> ~/.bashrc && \
+  apk add --no-cache git openssh bash && \
   ssh-keygen -A && \
   sed -i "s/#AuthorizedKeysFile/AuthorizedKeysFile/g" /etc/ssh/sshd_config && \
   adduser git -D -G root -h /home/git -s /bin/bash && \
