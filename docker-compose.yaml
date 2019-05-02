@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+
+  marcellodesales-git-sshd-server:
+    image: marcellodesales/git-sshd-server:${VERSION}
+    build: .
+    ports:
+      - "52311:22"
