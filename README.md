@@ -4,6 +4,8 @@ This is the base image from the Dockerfile https://help.github.com/enterprise/2.
 
 * You can reuse this image to create pre-receive hook in Python, Golang, Java, etc.
 
+[![resolution](http://dockeri.co/image/marcellodesales/git-sshd-server "Git SSHD Server Base Image")](https://hub.docker.com/r/marcellodesales/git-sshd-server/)
+
 # Requirements
 
 * `docker`: latest version
