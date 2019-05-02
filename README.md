@@ -2,8 +2,6 @@
 
 This is the base image from the Dockerfile https://help.github.com/enterprise/2.6/admin/guides/developer-workflow/creating-a-pre-receive-hook-script/#testing-pre-receive-scripts-locally. This is the first base with Git + SSHD server running without any language-specific implementation.
 
-[![resolution](http://dockeri.co/image/marcellodesales/github-enterprise-prereceive-hook-base "Github Enterprise Pre-Receive Hook Base Image")](https://hub.docker.com/r/intuit/spring-cloud-config-validator/)
-
 * You can reuse this image to create pre-receive hook in Python, Golang, Java, etc.
 
 # Requirements
